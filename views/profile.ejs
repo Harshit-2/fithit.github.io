@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Saved</title>
+    <link rel="icon" href="../static/img/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <link rel="stylesheet" href="../static/css/submitStyle.css" />
+  </head>
+
+  <body>
+    <section class="main">
+      <nav>
+        <ul>
+          <div class="logo">
+            <img src="../static/img/logo1.png" alt="Logo" />
+          </div>
+          <li><a href="/">HOME</a></li>
+          <li><a href="/about">ABOUT</a></li>
+          <li><a href="/services">SERVICES</a></li>
+          <li><a href="/contact">CONTACT US</a></li>
+
+          <i class="fa fa-search">
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Search this website"
+            />
+          </i>
+          <button class="btn btn-sm">Search</button>
+          <a
+            href="/logout"
+            class="btn btn-sm btn-logout"
+            style="text-decoration: none"
+            >Logout</a
+          >
+        </ul>
+        <hr />
+      </nav>
+
+      <div class="logo1">
+        <div class="inner-container">
+          <img src="../static/img/logo1.png" alt="Logo" />
+        </div>
+      </div>
+      <section class="container">
+        <div class="message">
+          <i class="fa fa-user"></i>
+        </div>
+        <h2>Hi, <%= userInfo.fname %>!</h2>
+        <br /><br />
+        <div class="content">
+          <p>Name: <%= userInfo.fname %> <%= userInfo.lname %></p>
+          <p>Email: <%= userInfo.username %></p>
+
+          <p>memberID: <%= userInfo.userid %></p>
+
+          <p>ID in Database: <%= userInfo._id %></p>
+          <br />
+          <br />
+        </div>
+      </section>
+    </section>
+    <script
+      src="https://kit.fontawesome.com/7b7a748413.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <footer>Copyright © 2023 - All rights reserved</footer>
+</html>

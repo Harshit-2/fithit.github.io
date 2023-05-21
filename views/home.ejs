@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>FitHit</title>
+    <link rel="icon" href="../static/img/icon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(window).scroll(function() {
+            var hT = $('.wrapper').offset().top,
+                hH = $('.wrapper').outerHeight(),
+                wH = $(window).height(),
+                wS = $(this).scrollTop();
+          
+            if (wS > (hT + hH - wH)) {
+              $('.wrapper').prop('Counter', 0).animate({
+                Counter: $('.wrapper').text()
+              }, {
+                duration: 4000,
+                easing: 'swing',
+                step: function(now) {
+                  $('.wrapper').text(Math.ceil(now));
+                }
+              });
+            }
+          });
+          
+    </script> -->
+
+    <section class="main1">
+        <nav>
+            <ul>
+                <div class="logo"><img src="../static/img/logo1.png" alt="Logo"></div>
+                <li> <a class="active" href="/">HOME</a></li>
+                <li> <a href="/about">ABOUT</a></li>
+                <li> <a href="/services">SERVICES</a></li>
+                <li> <a href="/contact">CONTACT US</a></li>
+
+                <i class="fa fa-search">
+                    <input type="text" name="search" id="search" placeholder="Search this website"> </i>
+                <button class="btn btn-sm">Search</button>
+
+                <button onclick="openLoginForm()" class="btn btn-sm login">
+                    <% if (info===0) { %>
+                        <div style="display: flex; align-items: center; gap: 5px;">
+                            <i class="fa fa-key" style="padding-left: 5px;"></i>
+                            <p>Login</p>
+                        </div>
+                        <%} else { %>
+                            <div style="display: flex; align-items: center; gap: 5px;">
+                                <i class="fa fa-user" style="padding-left: 5px;"></i>
+                                <p>Account</p>
+                            </div>
+                            <% } %>
+
+                </button>
+                <!-- <button onclick="openLoginForm()" class="btn btn-sm login">
+                    <%- info === 0 ? "Login" : "Account" %>
+                </button> -->
+
+                <div class="login-form-container" id="login-form-container">
+
+            </ul>
+            <hr>
+        </nav>
+        <section class="sec1">
+            <!-- <div class="top">
+                <h1>THE G<span>Y</span>M</h1>
+            </div> -->
+            <div class="middle">
+                <h3>
+                    <div class="style">BUILD</div> <span>YOUR BODY</span>
+                </h3>
+            </div>
+            <div class="end">
+                <h3>
+                    <div class="style">TRANSFOM</div> <span>YOUR LIFE</span>
+                </h3>
+            </div>
+            <p>We provide our best opportunity and qualified<br>
+                trainers for best workout yourself as you want!</p>
+        </section>
+    </section>
+
+    <section class="outerSwiper">
+        <h2>Highlights of GYM</h2>
+        <!-- <div class="border-top"></div>
+        <div class="border-left"> -->
+        <div class="top-left-right-bottom">
+            <section class="dynamic grad1">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="../static/img/rand/1.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../static/img/rand/2.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../static/img/rand/3.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../static/img/rand/4.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../static/img/rand/5.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../static/img/rand/6.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../static/img/rand/7.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../static/img/rand/8.jpg" />
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <div id="counter">
+        <h2>Counter Heading</h2>
+        <section class="counter">
+            <div class="wrapper">
+                <div class="container">
+                    <i class="fa fa-heartbeat"></i>
+                    <span class="num" data-val="400">000</span>
+                    <span class="text">Health</span>
+                </div>
+
+                <div class="container">
+                    <i class="fas fa-smile-beam"></i>
+                    <span class="num" data-val="340">000</span>
+                    <span class="text">Happy Customers</span>
+                </div>
+
+                <div class="container">
+                    <i class="fa fa-users"></i>
+                    <span class="num" data-val="225">000</span>
+                    <span class="text">Members</span>
+                </div>
+
+                <div class="container">
+                    <i class="fa fa-trophy"></i>
+                    <span class="num" data-val="280">000</span>
+                    <span class="text">Prizes Won</span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section id="missionSection">
+        <h2> Our Mission</h2>
+        <div class="cards">
+            <h3> Health</h3>
+            <div class="card-box">
+                <div class="card-img">
+                    <img src="../static/img/1.png" alt="Img-1">
+                </div>
+                <div class="card-content">
+                    <p>Start slowly, and gradually increase the duration of your exercise.</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="cards">
+            <h3> Food Supplements</h3>
+            <div class="card-box">
+                <div class="card-img">
+                    <img src="../static/img/2.png" alt="Img-2">
+                </div>
+                <div class="card-content">
+                    <p>It will be helping you add long-term muscle mass, strength, and endurance.</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="cards">
+            <h3> Healthy Lifestyle</h3>
+            <div class="card-box">
+                <div class="card-img">
+                    <img src="../static/img/3.png" alt="Img-3">
+                </div>
+                <div class="card-content">
+                    <p> Whatever your age, there's strong scientific evidence that being physically active can help
+                        you
+                        lead a healthy life.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="ourClients">
+        <section class="customer-logos slider">
+            <div class="slide"><img src="../static/img/logo/1.png"></div>
+            <div class="slide"><img src="../static/img/logo/2.png"></div>
+            <div class="slide"><img src="../static/img/logo/3.png"></div>
+            <div class="slide"><img src="../static/img/logo/4.png"></div>
+            <div class="slide"><img src="../static/img/logo/5.png"></div>
+            <div class="slide"><img src="../static/img/logo/6.png"></div>
+            <div class="slide"><img src="../static/img/logo/7.png"></div>
+            <div class="slide"><img src="../static/img/logo/8.png"></div>
+        </section>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/7b7a748413.js" crossorigin="anonymous"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+
+    <script>
+        function openLoginForm() {
+            window.location.href = "/login";
+        }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('.customer-logos').slick({
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1000,
+                arrows: false,
+                dots: false,
+                pauseOnHover: false,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 4
+                    }
+                }, {
+                    breakpoint: 520,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                }]
+            });
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="../static/index.js"></script>
+</body>
+
+<footer>Copyright © 2023 - All rights reserved</footer>
+
+</html>

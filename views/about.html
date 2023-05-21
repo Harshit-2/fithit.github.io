@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/aboutStyle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>FitHit</title>
+    <link rel="icon" href="../static/img/icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <section class="nav-top">
+        <nav>
+            <ul>
+                <div class="logo"><img src="../static/img/logo1.png" alt="Logo"></div>
+                <li> <a href="/">HOME</a></li>
+                <li> <a class="active" href="/about">ABOUT</a></li>
+                <li> <a href="/services">SERVICES</a></li>
+                <li> <a href="/contact">CONTACT US</a></li>
+
+                <i class="fa fa-search">
+                    <input type="text" name="search" id="search" placeholder="Search this website"> </i>
+                <button class="btn btn-sm">Search</button>
+
+                <button onclick="openLoginForm()" class="btn btn-sm login">
+                    <div style="display: flex; align-items: center; gap: 5px;">
+                        <i class="fa fa-user" style="padding-left: 5px;"></i>
+                        <p>Account</p>
+                    </div>
+                </button>
+                <div class="login-form-container" id="login-form-container">
+
+            </ul>
+            <hr>
+        </nav>
+        <section class="innerSection">
+            <h1>Wellness in Chandigarh, CH</h1>
+            <span>Gym in Chandigarh, CH is a Wellness Consultant business offering personalized programs to help you
+                reach your health and fitness goals. Our team of experts are dedicated to helping you create a balanced
+                lifestyle and achieve the body you’ve always wanted.</span>
+        </section>
+    </section>
+
+    <section class="cards">
+        <div #swiperRef="" class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../static/img/randomImgs/1.jpg" alt="Image-1"></div>
+                <div class="swiper-slide"><img src="../static/img/randomImgs/2.png" alt="Image-2"></div>
+                <div class="swiper-slide"><img src="../static/img/randomImgs/3.png" alt="Image-3"></div>
+                <div class="swiper-slide"><img src="../static/img/randomImgs/4.png" alt="Image-4"></div>
+                <div class="swiper-slide"><img src="../static/img/randomImgs/5.png" alt="Image-5"></div>
+                <div class="swiper-slide"><img src="../static/img/randomImgs/7.jpg" alt="Image-7"></div>
+                <div class="swiper-slide"><img src="../static/img/randomImgs/6.png" alt="Image-6"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="middle">
+        <section class="inner2">
+            <img src="../static/img/about_1.png" alt="About Img-1">
+
+            <section class="inInner">
+                <h2>Stength And Endurance</h2>
+                <div>
+                    <div class="vl">
+                        <p>Strength does not come from winning. Your struggles develop your strengths. When you go through hardships and decide not to surrender, that is strength. - Arnold Schwarzenegger</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="inner2">
+            <section class="inInner">
+                <h2>Focus on your Goal</h2>
+                <div>
+                    <div class="vl">
+                        <p>Believe in yourself and all that you are. Know that there is something inside you that is greater than any obstacle. - Christian D. Larson</p>
+                    </div>
+                </div>
+            </section>
+            <img src="../static/img/about_2.png" alt="About Img-2">
+
+
+        </section>
+
+        <section class="inner2">
+            <img src="../static/img/about_3.png" alt="About Img-3">
+
+            <section class="inInner">
+                <h2>Stay Motivated</h2>
+                <div>
+                    <div class="vl">
+                        <p>If we could give every individual the right amount of nourishment and exercise, not too little and not too much, we would have found the safest way to health.¨ — Hippocrates</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+
+    <section class="review">
+
+        <h1>Reviews</h1>
+
+        <section class="contactTop">
+            <img src="../static/img/review/1.png" alt="Review-1">
+            <div class="data">
+                <h2>Devin</h2>
+                <span>It is a good experience and I am satisfied with this gym.</span>
+                <div class="rating tooltip">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="tooltiptext">3/5</span>
+                </div>
+            </div>
+
+            <img src="../static/img/review/2.png" alt="Review-2">
+            <div class="data">
+                <h2>Joseph</h2>
+                <span>The gym is exceptionally clean and well-maintained. The staff is diligent about keeping the equipment sanitized.</span>
+
+                <div class="rating tooltip">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="tooltiptext">5/5</span>
+                </div>
+            </div>
+
+            <img src="../static/img/review/3.png" alt="Review-3">
+            <div class="data">
+                <h2>Sneha</h2>
+                <span>the gym regularly brings in guest instructors and hosts events and challenges to keep things interesting and motivating.</span>
+
+                <div class="rating tooltip">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="tooltiptext">4/5</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="contactMiddle">
+            <img src="../static/img/review/4.png" alt="Review-4">
+            <div class="data">
+                <h2>Marina</h2>
+                <span>The trainers are knowledgeable and supportive, always willing to help with form and technique or provide guidance on workouts and nutrition.</span>
+
+                <div class="rating tooltip">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="tooltiptext">3/5</span>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="contactBottom">
+            <img src="../static/img/review/5.png" alt="Review-5">
+            <div class="data">
+                <h2>Candice</h2>
+                <span>I am fully satisfied with the Gym and trainers is very polite and he also guide on the technique on workouts.</span>
+
+                <div class="rating tooltip">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="tooltiptext">5/5</span>
+                </div>
+            </div>
+            <img src="../static/img/review/6.png" alt="Review-6">
+            <div class="data">
+                <h2>Michael</h2>
+                <span>It is a good experience and trainers are also good when we ask for workouts technique.</span>
+
+                <div class="rating tooltip">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="tooltiptext">3/5</span>
+                </div>
+            </div>
+            <img src="../static/img/review/7.png" alt="Review-7">
+            <div class="data">
+                <h2>Ian</h2>
+                <span>It is good experience in fit-hit gym . The front desk staff are friendly and welcoming, and the management team is responsive to feedback and suggestions.</span>
+
+                <div class="rating tooltip">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="tooltiptext">4/5</span>
+                </div>
+
+        </section>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            speed: 1000,
+            autoplay: {
+                delay: 1000,
+            },
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        var appendNumber = 4;
+        var prependNumber = 1;
+        document
+            .querySelector(".prepend-2-slides")
+            .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.prependSlide([
+                    '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+                    '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+                ]);
+            });
+        document
+            .querySelector(".prepend-slide")
+            .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.prependSlide(
+                    '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
+                );
+            });
+        document
+            .querySelector(".append-slide")
+            .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.appendSlide(
+                    '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
+                );
+            });
+        document
+            .querySelector(".append-2-slides")
+            .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.appendSlide([
+                    '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+                    '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+                ]);
+            });
+
+    </script>
+
+    <script>
+        function openLoginForm() {
+            window.location.href = "/login";
+        }
+    </script>
+</body>
+
+<footer>Copyright © 2023 - All rights reserved</footer>
+
+
+</html>

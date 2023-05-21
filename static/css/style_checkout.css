@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;700;900&family=Raleway:wght@100;300;500;700&display=swap');
+
+#shubham :root {
+    --bodyBack: #ffeaed;
+    --textColor: #1b2741;
+    --starColor: #f67034;
+    --sectionBack: #f7f6f9;
+}
+
+#shubham * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* body {
+    background-color: var(--bodyBack);
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+} */
+
+#shubham .container {
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#shubham .header {
+    width: 100%;
+    text-align: center;
+}
+
+#shubham .header h1 {
+    font-size: 4em;
+    text-transform: uppercase;
+    color: var(--textColor);
+}
+
+#shubham .products {
+    width: 100%;
+    align-self: center;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+#shubham .product {
+    position: relative;
+    background-color: var(--sectionBack);
+    width: 350px;
+    height: 100%;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 20px 40px;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+#shubham .product:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+#shubham .image {
+    width: 100%;
+    height: 60%;
+    display: grid;
+    place-content: center;
+}
+
+#shubham .image img {
+    width: 110px;
+}
+
+#shubham .namePrice {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#shubham .namePrice h3 {
+    font-size: 2em;
+    text-transform: capitalize;
+    color: var(--textColor);
+}
+
+#shubham .namePrice span {
+    font-size: 1.5em;
+    color: var(--starColor);
+}
+
+#shubham .product p {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+#shubham .stars svg {
+    font-size: 1.3em;
+    color: var(--starColor);
+}
+
+#shubham .bay {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+#shubham .bay button {
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: none;
+    background-color: var(--textColor);
+    color: var(--sectionBack);
+    font-size: 18px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#shubham .bay button:hover {
+    transform: scale(1.1);
+}

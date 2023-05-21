@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Merriweather&family=Noto+Serif&family=Poppins&family=Roboto&family=Ubuntu&family=Yeon+Sung&display=swap");
+
+nav i {
+  margin-left: 100px;
+}
+
+.main {
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  color: white;
+  font-size: 18px;
+  background-blend-mode: darken;
+  background-size: cover;
+}
+
+.main::before{
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height:100%;
+  background: rgba(0, 0, 0, 0.3) url('/static/img/bgg2.jpg') center/cover no-repeat;
+  background-blend-mode: darken;
+  filter: blur(5px);
+  background-size: cover;
+}
+
+.logo1 {
+  width: 40%;
+  top: 12%;
+  position: relative;
+  left: 38%;
+}
+
+.logo1 img {
+  width: 50%;
+  padding: 5px 20px;
+  padding-bottom: 50px;
+}
+
+.message i {
+  color: #00bfa5;
+  font-size: 6rem;
+  font-weight: lighter;
+  margin: 20px 0;
+}
+
+.container {
+  border: 3px solid white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Fira Sans", sans-serif;
+  margin: 75px 380px;
+}
+
+.container h2 {
+  margin: 10px;
+  font-size: 2.7rem;
+}
+
+.container .content {
+  font-size: 1.5rem;
+}
+
+.last {
+  padding-bottom: 15px;
+}

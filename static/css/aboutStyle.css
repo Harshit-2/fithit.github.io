@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Noto+Serif&family=Poppins&family=Roboto&family=Ubuntu&family=Yeon+Sung&display=swap');
+
+.nav-top {
+    top: 0;
+    left: 0;
+    height: 65vh;
+    width: 100%;
+    color: white;
+    font-size: 18px;
+    background: rgba(0, 0, 0, 0.3) url('/static/img/bgAbout.jpg') center/cover no-repeat;
+    z-index: 101;
+    background-blend-mode: darken;
+    background-size: cover;
+}
+
+nav {
+    position: fixed;
+}
+
+body {
+    background-color: black;
+}
+
+.innerSection {
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav-top .innerSection h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 3.5rem;
+    color: white;
+}
+
+.nav-top .innerSection span {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding: 30px 170px;
+}
+
+.cards {
+    background-color: black;
+    height: auto;
+    width: 99.8%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    z-index: -100;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.middle {
+    background-image: linear-gradient(rgb(61, 61, 61), rgb(32, 32, 32));
+    /* height: 100vh; */
+    width: 100%;
+    top: 165vh;
+    left: 0;
+    /* display: flex; */
+}
+
+.inner2 {
+    display: flex;
+}
+
+.middle img {
+    height: 70%;
+    width: 65%;
+    display: flex;
+    margin: 70px 10px;
+    border-radius: 30px;
+}
+
+.inInner h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    margin-top: 311px;
+    margin-left: -68px;
+}
+
+.inner2 .vl {
+    margin: 60px;
+}
+
+.inner2 p {
+    padding: 40px;
+}
+
+.inInner p {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.vl {
+    border-left: 6px solid rgb(255, 255, 255);
+    height: auto;
+    color: white;
+}
+
+.review {
+    background-color: rgb(0, 0, 0);
+    height: auto;
+    width: 100%;
+    top: 484vh;
+    left: 0;
+    color: white;
+    position: absolute;
+}
+
+.review h1 {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 0;
+    font-family: 'Merriweather', serif;
+}
+
+.review .contactTop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.review .contactMiddle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.review .contactBottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.review img {
+    border-radius: 100%;
+    width: 15%;
+    margin: 30px;
+    border: 6px solid rgba(255, 255, 255, 0.5);
+}
+
+.review .data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 188px;
+    text-align: left;
+}
+
+.review .data h2 {
+    padding: 20px 5px;
+}
+
+.review .checked {
+    color: orange;
+}
+
+.review .rating {
+    margin: 20px;
+}
+
+footer {
+    margin-top: 30px;
+    position: absolute;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 50px;
+    background-color: rgb(75, 75, 75);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    left: 90%;
+    margin-left: -60px;
+}  
+
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;  /* At the top of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent rgb(75, 75, 75) transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+footer {
+    top: 614vh;
+    left: 0;
+    font-size: 24px;
+    /* padding: 4px 575.9px; */
+    padding: 4px 37.9%;
+    font-family: 'Yeon Sung';
+    color: white;
+    background-color: #fd17b5;
+    text-align: center;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Form</title>
+    <!-- <link rel="stylesheet" href="../static/css/style_checkout.css"> -->
+    <link rel="stylesheet" href="../static/css/payment.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Confirm Your Payment</h1>
+        <div class="first-row">
+            <div class="owner">
+                <h3>Card Holder</h3>
+                <div class="input-field">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="cvv">
+                <h3>CVV</h3>
+                <div class="input-field">
+                    <input type="password">
+                </div>
+            </div>
+        </div>
+        <div class="second-row">
+            <div class="card-number">
+                <h3>Card Number</h3>
+                <div class="input-field">
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+        <div class="third-row">
+            <h3>Expiry Date</h3>
+            <div class="selection">
+                <div class="date">
+                    <select name="months" id="months">
+                        <option value="Jan">Jan</option>
+                        <option value="Feb">Feb</option>
+                        <option value="Mar">Mar</option>
+                        <option value="Apr">Apr</option>
+                        <option value="May">May</option>
+                        <option value="Jun">Jun</option>
+                        <option value="Jul">Jul</option>
+                        <option value="Aug">Aug</option>
+                        <option value="Sep">Sep</option>
+                        <option value="Oct">Oct</option>
+                        <option value="Nov">Nov</option>
+                        <option value="Dec">Dec</option>
+                    </select>
+                    <select name="years" id="years">
+                        <option value="2020">2025</option>
+                        <option value="2020">2026</option>
+                        <option value="2020">2027</option>
+                        <option value="2020">2028</option>
+                        <option value="2020">2029</option>
+                        <option value="2020">2030</option>
+                        <option value="2019">2031</option>
+                        <option value="2018">2032</option>
+                        <option value="2017">2033</option>
+                        <option value="2016">2034</option>
+                        <option value="2015">2035</option>
+                    </select>
+                </div>
+                <div class="cards">
+                    <img src="../static/img/images/mc.png" alt="">
+                    <img src="../static/img/images/vi.png" alt="">
+                    <img src="../static/img/images/pp.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="mainContainer">
+            <button class="btn" id="submit"> Submit </button>
+            <div class="popupContainer" id="popupMenu">
+                <img id="image" src="./thankyou.webp" alt="">
+                <h2> Thank You!</h2>
+                <p> Thank you sir/mam! Your form has been successfully submitted </p>
+                <button id="close"> ok </button>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- <script src="payment.js"></script> -->
+<script>
+    const submitBtn = document.getElementById('submit')
+    const closeBtn = document.getElementById('close')
+    const popup = document.querySelector('.popupContainer')
+
+    submitBtn.addEventListener('click', function () {
+        popup.classList.add('popupActive')
+
+    })
+    closeBtn.addEventListener('click', function () {
+        popup.classList.remove('popupActive')
+
+    })
+</script>
+
+</html>

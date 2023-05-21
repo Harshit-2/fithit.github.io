@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("/static/img/loginBg3.jpg") no-repeat center center/cover
+    fixed;
+}
+
+.container {
+  color: white;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
+
+.containWrap {
+  background-color: #373737;
+  padding: 15px;
+  border-radius: 25px 0 25px 0;
+}
+
+.container h1 {
+  font-family: "Heebo", sans-serif;
+  /* width: 50%; */
+  display: inline-block;
+  font-size: 40px;
+  border-bottom: 5px solid #13bc79;
+  margin-bottom: 15px;
+  padding: 13px 0;
+}
+
+.box {
+  width: 100%;
+  margin: 22px 0px;
+  border-bottom: 2px solid #13bc79;
+}
+
+.box input {
+  background: none;
+  width: 75%;
+  padding: 5px 10px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+.btn {
+  color: white;
+  cursor: pointer;
+  outline: none;
+  margin: 12px 0;
+  padding: 10px 21px;
+  border: 2px solid #13bc79;
+  border-radius: 10px;
+  font-size: 18px;
+  background: #13bc79;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.un-btn {
+  background-color: white;
+  color: #13bc79;
+  font-size: 14px;
+}
+
+.box i {
+  width: 25px;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 0.5;
+  color: #13bc79;
+  background: white;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+  -webkit-transition-delay: 9999s;
+}
