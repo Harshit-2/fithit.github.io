@@ -1,5 +1,6 @@
 require("dotenv").config();
 
+
 mongoose.set("strictQuery", false);
 const bodyParser = require("body-parser");
 const session = require("express-session");
