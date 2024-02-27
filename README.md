@@ -1,1 +1,3 @@
 # fithit.github.io
+
+Not fully responsive yet...
