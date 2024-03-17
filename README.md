@@ -33,7 +33,8 @@ Login/SignUp Page:
 
 Contact in MongoDB:
 
-![image](https://github.com/Harshit-2/fithit.github.io/assets/102576901/14fa04fe-1da9-404b-86b3-e8a4e9ae1a94)
+![image](https://github.com/Harshit-2/fithit.github.io/assets/102576901/97d776e6-37b6-448f-bae0-4d3b25f661e4)
+
 
 <br>
 
