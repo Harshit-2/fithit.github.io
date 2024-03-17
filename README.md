@@ -22,6 +22,24 @@ Contact Page:
 
 ![image](https://github.com/Harshit-2/fithit.github.io/assets/102576901/33083798-6ab8-412e-be94-2cfb1ce279b6)
 
+<br>
+
+Login/SignUp Page:
+
+![image](https://github.com/Harshit-2/fithit.github.io/assets/102576901/870ace2a-2051-40fe-b950-d68b6790fb46)
+
+<br>
+
+Contact in MongoDB:
+
+![image](https://github.com/Harshit-2/fithit.github.io/assets/102576901/14fa04fe-1da9-404b-86b3-e8a4e9ae1a94)
+
+<br>
+
+Users in MongoDB:
+
+![image](https://github.com/Harshit-2/fithit.github.io/assets/102576901/e1903f2a-7fd2-4206-96a1-002b870e0c54)
+
 
 
 Not fully responsive yet..
