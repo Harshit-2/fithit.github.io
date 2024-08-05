@@ -40,7 +40,8 @@ Contact in MongoDB:
 
 Users in MongoDB:
 
-![image](https://github.com/Harshit-2/fithit.github.io/assets/102576901/e1903f2a-7fd2-4206-96a1-002b870e0c54)
+![image](https://github.com/user-attachments/assets/d64ed6d7-99a0-4588-b7ad-673224b6ab6b)
+
 
 
 <br>
