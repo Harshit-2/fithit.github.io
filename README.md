@@ -26,7 +26,8 @@ Contact Page:
 
 Login/SignUp Page:
 
-![image](https://github.com/Harshit-2/fithit.github.io/assets/102576901/894645c4-71d2-442d-8f50-ae737f0e0660)
+![image](https://github.com/user-attachments/assets/1be70176-7dc9-4c2f-aad0-a4028d47f592)
+
 
 
 <br>
